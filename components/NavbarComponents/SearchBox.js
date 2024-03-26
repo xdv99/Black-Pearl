@@ -35,11 +35,8 @@ function SearchBox({ isSideMenu = false }) {
         }
       >
         {results.map((movie) => (
-          <a href={`/movie/${movie.id}`}>
-            <div
-              key={movie.id}
-              className="flex max-w-full cursor-pointer hover:bg-gray-800"
-            >
+          <a href={`/movie/${movie.id}`} key={movie.id}>
+            <div className="flex max-w-full cursor-pointer hover:bg-gray-800">
               <img
                 className="w-14 mr-2"
                 src={`https://image.tmdb.org/t/p/original${movie.poster_path}`}

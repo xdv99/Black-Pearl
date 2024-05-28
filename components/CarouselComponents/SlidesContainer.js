@@ -59,9 +59,9 @@ function SliderContainer({ trendingMovies }) {
           e.preventDefault();
           changeSlide(i);
         }}
-        className={`p-2 ${
+        className={`p-1 ${
           index == i ? "bg-[#C0434B]" : "bg-[#d4d4d840]"
-        } rounded-full`}
+        } rounded-full md:p-2`}
       ></a>
     );
   }
